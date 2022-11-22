@@ -41,5 +41,9 @@ var TasseDaPagare = /** @class */ (function (_super) {
     };
     return TasseDaPagare;
 }(CalcoloTasse));
-var TassePagate = new TasseDaPagare(1, 20000, 798, 178);
-console.log("L'operaio Tedesco Mauro con reddito annuo di \u20AC ".concat(TassePagate.redditoannuolordo, " pagher\u00E0 per l'anno corrente \u20AC ").concat(TassePagate.getTasseInps() + TassePagate.getTasseIrpef(), ", tra cui:  tasse inps di \u20AC ").concat(TassePagate.getTasseInps(), ", tasse irpef di \u20AC ").concat(TassePagate.getTasseIrpef(), ", con un reddito netto di \u20AC ").concat(TassePagate.getRedditoAnnuoNetto()));
+var TasseArtigiano = new TasseDaPagare(67, 58000, 35, 15);
+var TasseProfessionista = new TasseDaPagare(78, 91000, 25.72, 5);
+var TasseCommerciante = new TasseDaPagare(40, 450000, 35, 15);
+console.log("Il commerciante Tedesco Mauro con reddito annuo di \u20AC ".concat(TasseCommerciante.redditoannuolordo, " pagher\u00E0 per l'anno corrente \u20AC ").concat(TasseCommerciante.getTasseInps() + TasseCommerciante.getTasseIrpef(), ", tra cui:  tasse inps di \u20AC ").concat(TasseCommerciante.getTasseInps(), ", tasse irpef di \u20AC ").concat(TasseCommerciante.getTasseIrpef(), ", con un reddito netto di \u20AC ").concat(TasseCommerciante.getRedditoAnnuoNetto()));
+console.log("L'Artigiano con reddito annuo di \u20AC ".concat(TasseArtigiano.redditoannuolordo, " pagher\u00E0 per l'anno corrente \u20AC ").concat(TasseArtigiano.getTasseInps() + TasseArtigiano.getTasseIrpef(), ", tra cui:  tasse inps di \u20AC ").concat(TasseArtigiano.getTasseInps(), ", tasse irpef di \u20AC ").concat(TasseArtigiano.getTasseIrpef(), ", con un reddito netto di \u20AC ").concat(TasseArtigiano.getRedditoAnnuoNetto()));
+console.log("Il libero professionista con reddito annuo di \u20AC ".concat(TasseProfessionista.redditoannuolordo, " pagher\u00E0 per l'anno corrente \u20AC ").concat(TasseProfessionista.getTasseInps() + TasseProfessionista.getTasseIrpef(), ", tra cui:  tasse inps di \u20AC ").concat(TasseProfessionista.getTasseInps(), ", tasse irpef di \u20AC ").concat(TasseProfessionista.getTasseIrpef(), ", con un reddito netto di \u20AC ").concat(TasseProfessionista.getRedditoAnnuoNetto()));

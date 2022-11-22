@@ -1,0 +1,3 @@
+professionista: codice 78, irpef 5, inps 25.72
+artigiano: codice 67, irpef 15, inps 35
+commerciante: codice 40, irpef 15, inps 35
