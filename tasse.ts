@@ -32,4 +32,4 @@ class TasseDaPagare extends CalcoloTasse {
     }
 }
 let TassePagate = new TasseDaPagare(1, 20000, 798, 178);
-console.log(`L'operaio Tedesco Mauro con reddito annuo di € ${TassePagate.redditoannuolordo} pagherà per l'anno corrente € ${TassePagate.getUtileTasse()} di tasse, con un reddito netto di € ${TassePagate.getRedditoAnnuoNetto()}`);
+console.log(`L'operaio Tedesco Mauro con reddito annuo di € ${TassePagate.redditoannuolordo} pagherà per l'anno corrente € ${TassePagate.getTasseInps() + TassePagate.getTasseIrpef()}, tra cui:  tasse inps di € ${TassePagate.getTasseInps()}, tasse irpef di € ${TassePagate.getTasseIrpef()}, con un reddito netto di € ${TassePagate.getRedditoAnnuoNetto()}`);
